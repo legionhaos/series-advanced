@@ -38,11 +38,11 @@ def main() -> None:
     # Поддержка автоматического режима через аргумент --auto или интерактивный ввод
     if "--auto" in sys.argv:
         student_n = config.DEFAULT_STUDENT_N
-        print(f"Автоматический запуск для номера по журналу N = {student_n}")
+        print(f"Автоматический запуск для номера зачётки N = {student_n}")
     else:
         try:
             raw = input(
-                f"Введите ваш номер по журналу N [Enter = {config.DEFAULT_STUDENT_N}]: "
+                f"Введите окончание номера зачётки N [Enter = {config.DEFAULT_STUDENT_N}]: "
             ).strip()
             if not raw:
                 student_n = config.DEFAULT_STUDENT_N
